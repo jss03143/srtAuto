@@ -50,6 +50,9 @@ while True:
                 driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[7]/a').send_keys(Keys.ENTER)
                 find == 1
                 break
+                
+                # 신청하기 부분은 혹시 예매칸이 다 차서 나올 경우에 주석 빼고 쓰면 됩니다.
+                
             # if driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[8]/a').text == "신청하기":
             #     driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[8]/a').send_keys(Keys.ENTER)
             #     find == 1
