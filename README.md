@@ -10,5 +10,7 @@ PW = 비밀번호 입력
 32줄 원하는 시간부터 나타냅니다. 1 = 00시, 2 = 02시, 3 = 04시 ... 
 
 해당 chromedriver는 94버전 드라이버입니다. 크롬이 업데이트가 됐을 경우 사용이 불가능합니다.
-불가능해졌을 경우 https://chromedriver.chromium.org/downloads 에서 자신의 버전에 맞는 드라이버를 깔고,
+불가능해졌을 경우 https://chromedriver.chromium.org/downloads 에서 자신의 버전에 맞는 드라이버를 받고,
 py 파일과 같은 위치에 두면 됩니다.
+
+srt, ktx 루트가 중복될 경우 ktx로 발급이 될 수 있습니다.
