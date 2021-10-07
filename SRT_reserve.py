@@ -45,6 +45,7 @@ while True:
         driver.implicitly_wait(10)
         t.sleep(0.5)
         for n in range(1, 11):                 # 1페이지 기차 수. 돌리기 전 미리 (1, 11)에서 11의 숫자를 바꿔놓아야 함.
+            # 이 부분도 try, except로 수정 가능함.
             print(n)
             if driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[7]/a').text == "예약하기":
                 driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[7]/a').send_keys(Keys.ENTER)
