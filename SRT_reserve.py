@@ -65,6 +65,7 @@ while True:
             t.sleep(0.5)
             #try:
             for n in range(1, 10):              # 2페이지 기차 수. 돌리기 전 미리 (1, 10)에서 10의 숫자를 바꿔놓아야 함. 숫자 기준은 +1. 2페이지 기차가 7대라면 10을 8로 변경할 것.
+                # 이부분 잘하면 for 말고 try, except를 써서 넘어가게 할 수 있을듯?
                 print(n)
                 if driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[7]/a').text == "예약하기":
                     driver.find_element_by_xpath(f'//*[@id="result-form"]/fieldset/div[6]/table/tbody/tr[{n}]/td[7]/a').send_keys(Keys.ENTER)
