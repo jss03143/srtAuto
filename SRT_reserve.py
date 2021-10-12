@@ -85,5 +85,5 @@ while True:
 
         t.sleep(random.uniform(1.5, 4))
     except:
-        pyautogui.alert(("!!예매에 성공했습니다. 10분안에 결재해주세요.!!\n\n◎ 이미 예매된 좌석이라고 나올 경우 프로그램을 다시 실행해주세요.")
+        pyautogui.alert("!!예매에 성공했습니다. 10분안에 결재해주세요.!!\n\n◎ 이미 예매된 좌석이라고 나올 경우 프로그램을 다시 실행해주세요.")
         t.sleep(3600)
