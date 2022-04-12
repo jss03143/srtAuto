@@ -22,14 +22,14 @@ driver.find_element_by_xpath('//*[@id="login-form"]/fieldset/div[1]/div[1]/div[2
 driver.implicitly_wait(15)
 
 driver.find_element_by_id('arvRsStnCd').click()
-driver.find_element_by_xpath('//*[@id="dptRsStnCd"]/option[15]').click()                # 출발지
-driver.find_element_by_xpath('//*[@id="arvRsStnCd"]/option[5]').click()                 # 도착지
-# 출발지 도착지 코드 :                수서 02 / 동탄 03 / 평택지제 04 / 천안아산 05 / 오송 06 / 대전 07 / 김천(구미) 08 / 동대구 09 / 신경주 10 /
-# option 숫자를 변경해주세요          울산(통도사) 11 / 부산 12 / 공주 13 / 익산 14 / 정읍 15 / 광주송정 16 / 나주 17 / 목포 18
+driver.find_element_by_xpath('//*[@id="dptRsStnCd"]/option[2]').click()                # 출발지
+driver.find_element_by_xpath('//*[@id="arvRsStnCd"]/option[16]').click()                 # 도착지
+# 출발지 도착지 코드 :                수서 02 / 동탄 03 / 평택지제 04 / 천안아산 05 / 오송 06 / 대전 07 / 김천(구미) 08 / 서대구 09 / 동대구 10
+# option 숫자를 변경해주세요          신경주 11 / 울산(통도사) 12 / 부산 13 / 공주 14 / 익산 15 / 정읍 16 / 광주송정 17 / 나주 18 / 목포 19
 
 date_ele = driver.find_element_by_xpath('//*[@id="search-form"]/fieldset/div[3]/div/input[1]')  
-driver.execute_script("arguments[0].setAttribute('value','2021.09.22')", date_ele)              # 날짜
-driver.find_element_by_xpath('//*[@id="dptTm"]/option[1]').click()                              # 출발시간
+driver.execute_script("arguments[0].setAttribute('value','2022.04.12')", date_ele)              # 날짜
+driver.find_element_by_xpath('//*[@id="dptTm"]/option[1]').click()                              # 출발시간 (옵션 시간 변경)
 driver.find_element_by_xpath('//*[@id="search-form"]/fieldset/a').click()
 driver.implicitly_wait(10)
 t.sleep(3)
